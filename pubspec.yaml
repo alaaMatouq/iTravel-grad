@@ -28,6 +28,7 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
+  http: ^0.13.4
   flutter:
     sdk: flutter
 
@@ -51,11 +52,25 @@ dev_dependencies:
 
 # The following section is specific to Flutter packages.
 flutter:
+  fonts:
+    - family: Lato
+      fonts:
+        - asset: assets/fonts/Lato-Black.ttf
+          weight: 400
+        - asset: assets/fonts/Lato-Regular.ttf
+          weight: 900
+    - family: DancingScript
+      fonts:
+        - asset: assets/fonts/DancingScript-Bold.ttf
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
+  assets:
+    - assets/images/welcomePhone1.png
+    - assets/images/welcome1.png
+    - assets/images/iTravelLogo.png
 
   # To add assets to your application, add an assets section, like this:
   # assets:
