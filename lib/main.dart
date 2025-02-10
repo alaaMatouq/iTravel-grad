@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:itravel_sa/welcomeScreens.dart';
-
+import 'package:itravel_sa/src/features/authentication/screens/on_boarding/on_boarding_screens.dart';
 import 'CurrencyConverter.dart';
+import 'package:itravel_sa/src/utils/theme/theme.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,10 +16,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Trip Guide App',
-      theme: ThemeData(
-        primarySwatch: Colors.teal,
-      ),
-      home:CurrencyConverter(), // Set Currency Converter Screen as Home
+      theme: TAppTheme.lightTheme,
+      darkTheme: TAppTheme.darkTheme,
+      themeMode: ThemeMode.system,
+      //home:CurrencyConverter(), // Set Currency Converter Screen as Home
+      home: WelcomeScreen(),
     );
   }
 }
