@@ -31,6 +31,8 @@ dependencies:
   http: ^0.13.4
   flutter:
     sdk: flutter
+  auth_repository:
+      path: packages/auth_repository
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -71,6 +73,9 @@ flutter:
     - assets/images/welcomePhone1.png
     - assets/images/welcome1.png
     - assets/images/iTravelLogo.png
+    - assets/images/welcome3.png
+    - assets/images/welcome44.png
+    - assets/images/welcome5.png
 
   # To add assets to your application, add an assets section, like this:
   # assets:
